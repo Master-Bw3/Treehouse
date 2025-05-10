@@ -36,6 +36,22 @@ nav ul li::before {
     content: "~/";
 }
 
+.readme h1 {
+  font-size:medium;
+  font-weight: normal;
+}
+
+.readme h1::before {
+  content: "=================== ";
+}
+.readme h1::after {
+  content: " ===================";
+}
+
+.readme::after {
+  content: "================================================";
+}
+
 .crt::before {
     content: " ";
     display: block;

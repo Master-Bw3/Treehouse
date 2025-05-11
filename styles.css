@@ -62,16 +62,11 @@ body {
     );
 }
 
-#content {
+#screen {
     margin-top: 0;
     position: relative;
-
-    padding: 1em;
     background-color: rgb(15, 4, 0);
-    color: orangered;
-    font-family: monospace;
-    font-size: large;
-    text-shadow: 0 0 0.1em orangered, 0 0 0.2em orangered;
+    padding: 1em;
     flex-grow: 1;
 }
 
@@ -79,6 +74,14 @@ body {
 nav ul li::before {
     color: orange;
     text-shadow: 0 0 0.1em orange, 0 0 0.2em orange;
+}
+
+#content {
+    color: orangered;
+    font-family: monospace;
+    font-size: large;
+    text-shadow: 0 0 0.1em orangered, 0 0 0.2em orangered;
+    max-width: 50em;
 }
 
 footer {
@@ -98,6 +101,10 @@ nav ul {
     width: 50%;
 }
 
+nav ul li:not(:first-child) {
+    margin-left: 1em;
+}
+
 nav ul li::before {
     content: '~/';
 }
@@ -106,6 +113,10 @@ nav ul li::before {
     display: flex;
     font-size: large;
     font-weight: normal;
+}
+
+.readme span {
+    max-width: fit-content;
 }
 
 .readme h1::before, .readme h1::after, .readme::after  {

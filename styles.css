@@ -22,9 +22,9 @@ body {
     background: #e3d9b3;
     background: linear-gradient(
         180deg,
-        rgba(227, 217, 179, 1) 0%,
-        rgba(219, 212, 173, 1) 62%,
-        rgba(184, 176, 143, 1) 100%
+        rgb(127, 127, 127) 0%,
+        rgb(118, 118, 118) 62%,
+        rgb(71, 71, 71) 100%
     );
     flex-grow: 1;
 }
@@ -35,9 +35,9 @@ body {
     background: #e3d9b3;
     background: linear-gradient(
         135deg,
-        rgba(227, 217, 179, 1) 0%,
-        rgba(219, 212, 173, 1) 80%,
-        rgba(184, 176, 143, 1) 100%
+        rgb(127, 127, 127) 0%,
+        rgb(118, 118, 118) 80%,
+        rgb(71, 71, 71) 100%
     );
 }
 
@@ -47,9 +47,9 @@ body {
     background: #e3d9b3;
     background: linear-gradient(
         225deg,
-        rgba(227, 217, 179, 1) 0%,
-        rgba(219, 212, 173, 1) 80%,
-        rgba(184, 176, 143, 1) 100%
+        rgb(127, 127, 127) 0%,
+        rgb(118, 118, 118) 80%,
+        rgb(71, 71, 71) 100%
     );
 }
 
@@ -59,9 +59,9 @@ body {
     background: #e3d9b3;
     background: linear-gradient(
         0deg,
-        rgba(227, 217, 179, 1) 0%,
-        rgba(219, 212, 173, 1) 62%,
-        rgba(184, 176, 143, 1) 100%
+        rgb(127, 127, 127) 0%,
+        rgb(118, 118, 118) 62%,
+        rgb(71, 71, 71) 100%
     );
     flex-grow: 1;
 }
@@ -72,9 +72,9 @@ body {
     background: #e3d9b3;
     background: linear-gradient(
         45deg,
-        rgba(227, 217, 179, 1) 0%,
-        rgba(219, 212, 173, 1) 80%,
-        rgba(184, 176, 143, 1) 100%
+        rgb(127, 127, 127) 0%,
+        rgb(118, 118, 118) 80%,
+        rgb(71, 71, 71) 100%
     );
 }
 
@@ -84,9 +84,9 @@ body {
     background: #e3d9b3;
     background: linear-gradient(
         -45deg,
-        rgba(227, 217, 179, 1) 0%,
-        rgba(219, 212, 173, 1) 80%,
-        rgba(184, 176, 143, 1) 100%
+        rgb(127, 127, 127) 0%,
+        rgb(118, 118, 118) 80%,
+        rgb(71, 71, 71) 100%
     );
 }
 
@@ -102,9 +102,9 @@ body {
     background: #e3d9b3;
     background: linear-gradient(
         90deg,
-        rgba(227, 217, 179, 1) 0%,
-        rgba(219, 212, 173, 1) 62%,
-        rgba(184, 176, 143, 1) 100%
+        rgb(127, 127, 127) 0%,
+        rgb(118, 118, 118) 62%,
+        rgb(71, 71, 71) 100%
     );
 }
 
@@ -114,9 +114,9 @@ body {
     background: #e3d9b3;
     background: linear-gradient(
         -90deg,
-        rgba(227, 217, 179, 1) 0%,
-        rgba(219, 212, 173, 1) 62%,
-        rgba(184, 176, 143, 1) 100%
+        rgb(127, 127, 127) 0%,
+        rgb(118, 118, 118) 62%,
+        rgb(71, 71, 71) 100%
     );
 }
 

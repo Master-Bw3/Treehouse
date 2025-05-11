@@ -3,39 +3,57 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Maple's Treehouse</title>
+        <title>Projects - Maple's Treehouse</title>
         <link rel="stylesheet" href="styles.css" />
     </head>
 
     <body>
-        <div class="crt" id="content">
-            <main>
-                <p>[maple@treehouse:~/projects]$ cat ./readme.txt</p>
-                <article class="readme">
-                    <h1>Projects</h1>
-                    <ul class="ls">
-                        <li>
-                            <a href="https://master-bw3.github.io/Hex-Studio/">Hex Studio</a>: a
-                            web-based IDE for
-                            <a href="https://modrinth.com/mod/hex-casting">Hex Casting</a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/Master-Bw3/Hexagon">Hexagon</a>: an
-                            interpreter and compiler for Hex Casting written in Rust
-                        </li>
-                    </ul>
-                </article>
-            </main>
-            <footer>
-                [maple@treehouse:~/projects]$ cd ~/
-                <nav>
-                    <ul>
-                        <li><a href="index.html">home</a></li>
-                        <li><a href="about.html">about</a></li>
-                        <li><a href="projects.html">projects</a></li>
-                    </ul>
-                </nav>
-            </footer>
+        <div id="monitor">
+            <div id="top_border_container">
+                <div id="top_left_corner"></div>
+                <div id="top_border"></div>
+                <div id="top_right_corner"></div>
+            </div>
+            <div id="middle">
+                <div id="left_border"></div>
+                <div class="crt" id="screen">
+                    <div id="content">
+                        <main>
+                            <p>[maple@treehouse:~/projects]$ cat ./readme.txt</p>
+                            <article class="readme">
+                                <h1>Projects</h1>
+                                <ul class="ls">
+                                    <li>
+                                        <a href="https://master-bw3.github.io/Hex-Studio/">Hex Studio</a>: a
+                                        web-based IDE for
+                                        <a href="https://modrinth.com/mod/hex-casting">Hex Casting</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/Master-Bw3/Hexagon">Hexagon</a>: an
+                                        interpreter and compiler for Hex Casting written in Rust
+                                    </li>
+                                </ul>
+                            </article>
+                        </main>
+                        <footer>
+                            [maple@treehouse:~/projects]$ cd ~/
+                            <nav>
+                                <ul>
+                                    <li><a href="index.html">home</a></li>
+                                    <li><a href="about.html">about</a></li>
+                                    <li><a href="projects.html">projects</a></li>
+                                </ul>
+                            </nav>
+                        </footer>
+                    </div>
+                </div>
+                <div id="right_border"></div>
+            </div>
+            <div id="bottom_border_container">
+                <div id="bottom_left_corner"></div>
+                <div id="bottom_border"></div>
+                <div id="bottom_right_corner"></div>
+            </div>
         </div>
     </body>
     <script src="script.js"></script>

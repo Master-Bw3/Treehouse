@@ -134,6 +134,7 @@ nav ul li::before {
     text-shadow: 0 0 0.1em orange, 0 0 0.2em orange;
 }
 
+
 #content {
     color: orangered;
     font-family: monospace;

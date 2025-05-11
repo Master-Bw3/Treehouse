@@ -1,28 +1,94 @@
 body {
-    background-color: black;
-    color: orangered;
-    font-family: monospace;
-    text-shadow:
-    0 0 1em orangered,
-    0 0 0.2em orangered,
-    0 0 0.2em orangered;
+    margin: 0;
+    display: grid;
 }
 
-body a, nav ul li::before {
+#monitor {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#top_border {
+    height: 5vh;
+    background: #e3d9b3;
+    background: linear-gradient(
+        180deg,
+        rgba(227, 217, 179, 1) 0%,
+        rgba(219, 212, 173, 1) 62%,
+        rgba(184, 176, 143, 1) 100%
+    );
+}
+
+#bottom_border {
+    height: 5vh;
+    background: #e3d9b3;
+    background: linear-gradient(
+        0deg,
+        rgba(227, 217, 179, 1) 0%,
+        rgba(219, 212, 173, 1) 62%,
+        rgba(184, 176, 143, 1) 100%
+    );
+}
+
+#middle {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+#left_border {
+    width: 5vh;
+    background: #e3d9b3;
+    background: linear-gradient(
+        90deg,
+        rgba(227, 217, 179, 1) 0%,
+        rgba(219, 212, 173, 1) 62%,
+        rgba(184, 176, 143, 1) 100%
+    );
+}
+
+#right_border {
+    width: 5vh;
+    background: #e3d9b3;
+    background: linear-gradient(
+        -90deg,
+        rgba(227, 217, 179, 1) 0%,
+        rgba(219, 212, 173, 1) 62%,
+        rgba(184, 176, 143, 1) 100%
+    );
+}
+
+#content {
+    margin-top: 0;
+    position: relative;
+
+    padding: 1em;
+    background-color: rgb(15, 4, 0);
+    color: orangered;
+    font-family: monospace;
+    font-size: large;
+    text-shadow: 0 0 0.1em orangered, 0 0 0.2em orangered;
+    flex-grow: 1;
+}
+
+#content a,
+nav ul li::before {
     color: orange;
-    text-shadow:
-    0 0 1em orange,
-    0 0 0.2em orange,
-    0 0 0.2em orange;
-  }
+    text-shadow: 0 0 0.1em orange, 0 0 0.2em orange;
+}
 
 footer {
     margin-top: 2em;
 }
 
-nav ul, .ls {
+nav ul,
+.ls {
     padding-left: 0;
-    margin-top: 0.5rem;
+    margin-top: 0.4rem;
     list-style: none;
 }
 
@@ -33,118 +99,47 @@ nav ul {
 }
 
 nav ul li::before {
-    content: "~/";
+    content: '~/';
 }
 
 .readme h1 {
-  font-size:medium;
-  font-weight: normal;
+    display: flex;
+    font-size: large;
+    font-weight: normal;
+}
+
+.readme h1::before, .readme h1::after, .readme::after  {
+    content: ' ';
+    background-image: url('./equals.png');
+    background-size: contain;
+    display: block;
+
+    height: 1em;
+    word-wrap: break-word;
+    margin: auto 0;
+    flex-grow: 1;
 }
 
 .readme h1::before {
-  content: "=================== ";
-}
-.readme h1::after {
-  content: " ===================";
+    margin-right: 0.5em;
 }
 
-.readme::after {
-  content: "================================================";
+.readme h1::after {
+    margin-left: 0.5em;
 }
+
 
 .crt::before {
-    content: " ";
+    content: ' ';
     display: block;
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%),
+        linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
     z-index: 2;
     background-size: 100% 2px, 3px 100%;
     pointer-events: none;
-  }
-
-  @keyframes flicker {
-    0% {
-    opacity: 0.27861;
-    }
-    5% {
-    opacity: 0.34769;
-    }
-    10% {
-    opacity: 0.23604;
-    }
-    15% {
-    opacity: 0.90626;
-    }
-    20% {
-    opacity: 0.18128;
-    }
-    25% {
-    opacity: 0.83891;
-    }
-    30% {
-    opacity: 0.65583;
-    }
-    35% {
-    opacity: 0.67807;
-    }
-    40% {
-    opacity: 0.26559;
-    }
-    45% {
-    opacity: 0.84693;
-    }
-    50% {
-    opacity: 0.96019;
-    }
-    55% {
-    opacity: 0.08594;
-    }
-    60% {
-    opacity: 0.20313;
-    }
-    65% {
-    opacity: 0.71988;
-    }
-    70% {
-    opacity: 0.53455;
-    }
-    75% {
-    opacity: 0.37288;
-    }
-    80% {
-    opacity: 0.71428;
-    }
-    85% {
-    opacity: 0.70419;
-    }
-    90% {
-    opacity: 0.7003;
-    }
-    95% {
-    opacity: 0.36108;
-    }
-    100% {
-    opacity: 0.24387;
-    }
-  }
-  
-  .crt::after {
-    content: " ";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: rgba(18, 16, 16, 0.1);
-    opacity: 0;
-    z-index: 2;
-    pointer-events: none;
-    animation: flicker 0.25s infinite;
-  }
-
-  
+}

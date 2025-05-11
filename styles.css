@@ -98,7 +98,7 @@ body {
 
 #left_border {
     max-width: 5vh;
-    min-width: 5vw;
+    width: 5vw;
     background: #e3d9b3;
     background: linear-gradient(
         90deg,

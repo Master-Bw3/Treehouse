@@ -91,14 +91,14 @@ body {
 }
 
 #middle {
-    display: flex;
-    justify-content: center;
+    display: grid;
     flex-grow: 1;
+    grid-template-columns: min-content 1fr min-content;
 }
 
 #left_border {
     max-width: 5vh;
-    width: 5vw;
+    min-width: 5vw;
     background: #e3d9b3;
     background: linear-gradient(
         90deg,

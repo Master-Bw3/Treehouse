@@ -12,8 +12,13 @@ body {
     flex-direction: column;
 }
 
+#top_border_container, #bottom_border_container {
+    display: flex;
+}
+
 #top_border {
-    height: 5vh;
+    max-height: 5vh;
+    height: 5vw;
     background: #e3d9b3;
     background: linear-gradient(
         180deg,
@@ -21,15 +26,66 @@ body {
         rgba(219, 212, 173, 1) 62%,
         rgba(184, 176, 143, 1) 100%
     );
+    flex-grow: 1;
+}
+
+#top_left_corner {
+    max-width: 5vh;
+    width: 5vw;
+    background: #e3d9b3;
+    background: linear-gradient(
+        135deg,
+        rgba(227, 217, 179, 1) 0%,
+        rgba(219, 212, 173, 1) 80%,
+        rgba(184, 176, 143, 1) 100%
+    );
+}
+
+#top_right_corner {
+    max-width: 5vh;
+    width: 5vw;
+    background: #e3d9b3;
+    background: linear-gradient(
+        225deg,
+        rgba(227, 217, 179, 1) 0%,
+        rgba(219, 212, 173, 1) 80%,
+        rgba(184, 176, 143, 1) 100%
+    );
 }
 
 #bottom_border {
-    height: 5vh;
+    max-height: 5vh;
+    height: 5vw;
     background: #e3d9b3;
     background: linear-gradient(
         0deg,
         rgba(227, 217, 179, 1) 0%,
         rgba(219, 212, 173, 1) 62%,
+        rgba(184, 176, 143, 1) 100%
+    );
+    flex-grow: 1;
+}
+
+#bottom_left_corner {
+    max-width: 5vh;
+    width: 5vw;
+    background: #e3d9b3;
+    background: linear-gradient(
+        45deg,
+        rgba(227, 217, 179, 1) 0%,
+        rgba(219, 212, 173, 1) 80%,
+        rgba(184, 176, 143, 1) 100%
+    );
+}
+
+#bottom_right_corner {
+    max-width: 5vh;
+    width: 5vw;
+    background: #e3d9b3;
+    background: linear-gradient(
+        -45deg,
+        rgba(227, 217, 179, 1) 0%,
+        rgba(219, 212, 173, 1) 80%,
         rgba(184, 176, 143, 1) 100%
     );
 }
@@ -41,7 +97,8 @@ body {
 }
 
 #left_border {
-    width: 5vh;
+    max-width: 5vh;
+    width: 5vw;
     background: #e3d9b3;
     background: linear-gradient(
         90deg,
@@ -52,7 +109,8 @@ body {
 }
 
 #right_border {
-    width: 5vh;
+    max-width: 5vh;
+    width: 5vw;
     background: #e3d9b3;
     background: linear-gradient(
         -90deg,
@@ -66,7 +124,7 @@ body {
     margin-top: 0;
     position: relative;
     background-color: rgb(15, 4, 0);
-    padding: 1em;
+    padding: 1em 2em;
     flex-grow: 1;
 }
 
